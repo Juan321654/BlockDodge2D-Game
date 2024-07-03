@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         gameObject.tag = TagManager.Tags.Player.ToString();
+        GlobalScoreManager.ResetGlobalScore();
     }
 
     void Update()
